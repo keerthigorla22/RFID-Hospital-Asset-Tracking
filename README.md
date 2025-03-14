@@ -1,48 +1,69 @@
-# RFID-Hospital-Asset-Tracking
-# Hospital Asset Tracking Through IoT
+RFID-Hospital-Asset-Tracking
 
-## Overview
+Hospital Asset Tracking Through IoT
+
+Overview
+
 This project proposes an IoT solution using RFID technology to track medical assets in real-time, enhancing hospital efficiency and patient care by reducing search time and improving resource allocation.
 
-## Features
-- Real-time medical equipment tracking
-- RFID-based identification and location tracking
-- Centralized data analysis system
-- Enhanced security and resource optimization
+Features
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/username/hospital-asset-tracking.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd hospital-asset-tracking
-   ```
-3. Install dependencies (if applicable):
-   ```bash
-   npm install
-   ```
-4. Upload code to Arduino and ESP32 devices.
+Real-time medical equipment tracking
 
-## Technologies Used
-- Arduino Uno
-- ESP32
-- RFID Readers (MFRC522)
-- LEDs and Buzzer
-- 16x2 LCD Display
-- Node.js and Express
-- MongoDB
+RFID-based unique identification and location tracking
 
-## Circuit Diagram
-![WhatsApp Image 2025-03-14 at 1 31 40 PM](https://github.com/user-attachments/assets/21b77a5b-a06d-473a-b171-4fd74cab094b)
-![WhatsApp Image 2025-03-14 at 1 31 40 PM (1)](https://github.com/user-attachments/assets/4ff5f4e8-6325-4f50-94ac-237a837f2983)
+Centralized data analysis system
+
+Enhanced security and resource optimization
+
+User-friendly web dashboard
+
+Alerts for unauthorized access
+
+Historical data logging for analytics
+
+Installation
+
+Clone the repository:
+
+git clone https://github.com/username/hospital-asset-tracking.git
+
+Navigate to the project directory:
+
+cd hospital-asset-tracking
+
+Install dependencies (if applicable):
+
+npm install
+
+Upload code to Arduino and ESP32 devices.
+
+Run the backend server:
+
+node server.js
+
+Access the web dashboard at:
+
+http://localhost:3000
+
+Technologies Used
+
+Hardware: Arduino Uno, ESP32, RFID Readers (MFRC522), LEDs, Buzzer, 16x2 LCD Display
+
+Software Stack: Node.js, Express.js, MongoDB, HTML/CSS/JavaScript
+
+Communication Protocols: SPI, I2C, and HTTP
+
+Circuit Diagram
+![img1](https://github.com/user-attachments/assets/0574993f-9943-4aad-879b-fb3676900fca)
 
 
+Hardware Implementation
 
-## Code Snippets
-### RFID Reader Code
-```cpp
+RFID Reader Code
+
+Reads RFID tags and sends data to ESP32.
+
 #include <SPI.h>
 #include <MFRC522.h>
 
@@ -67,10 +88,11 @@ void loop() {
     rfid1.PICC_HaltA();
   }
 }
-```
 
-### ESP32 Communication Code
-```cpp
+ESP32 Communication Code
+
+Sends RFID data to the server.
+
 #include <WiFi.h>
 #include <HTTPClient.h>
 
@@ -93,35 +115,57 @@ void loop() {
     http.end();
   }
 }
-```
 
-## Web Dashboard
-- Backend: Node.js and Express
-- Frontend: HTML/CSS/JavaScript
-- MongoDB for data storage
+Web Dashboard
 
-## Equipment Setup
-![Equipment Setup](images/equipment_setup.png)
+Backend: Node.js and Express for API handling
 
-## Web Dashboard Interface
-![Web Dashboard](images/web_dashboard.png)
+Frontend: HTML, CSS, JavaScript for real-time data visualization
 
-## Contributing
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit changes:
-   ```bash
-   git commit -m "Add feature"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request.
+Database: MongoDB for storing asset data
 
-## Contact
+Features:
+
+Real-time asset location tracking
+
+Alert system for unauthorized access
+
+Analytics and reporting for hospital staff
+
+Historical data tracking for analysis
+
+Equipment Setup
+
+Web Dashboard Interface
+
+Testing and Results
+
+Unit Testing: Verify individual components like RFID readers and ESP32.
+
+Integration Testing: Ensure smooth data flow between hardware and the server.
+
+Performance Evaluation: Assess accuracy, response time, and data latency.
+
+Contributing
+
+Fork the repository.
+
+Create a new branch:
+
+git checkout -b feature-name
+
+Commit changes:
+
+git commit -m "Add feature"
+
+Push to the branch:
+
+git push origin feature-name
+
+Open a pull request.
+
+Contact
+
 For any inquiries, reach out to gorlakeerthi2205@gmail.com.
+
 
