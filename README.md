@@ -35,7 +35,9 @@ This project proposes an IoT solution using RFID technology to track medical ass
 - MongoDB
 
 ## Circuit Diagram
-![WhatsApp Image 2025-03-14 at 1 31 40 PM](https://github.com/user-attachments/assets/516acd9e-fc65-4d2d-a131-1f2ef97da5c0)
+![WhatsApp Image 2025-03-14 at 1 31 40 PM](https://github.com/user-attachments/assets/21b77a5b-a06d-473a-b171-4fd74cab094b)
+![WhatsApp Image 2025-03-14 at 1 31 40 PM (1)](https://github.com/user-attachments/assets/4ff5f4e8-6325-4f50-94ac-237a837f2983)
+
 
 
 ## Code Snippets
@@ -120,9 +122,6 @@ void loop() {
    ```
 5. Open a pull request.
 
-## License
-[Specify the license, e.g., MIT, Apache, etc.]
-
 ## Contact
-For any inquiries, reach out to [Your Email] or [Your Social Media Handle].
+For any inquiries, reach out to gorlakeerthi2205@gmail.com.
 
